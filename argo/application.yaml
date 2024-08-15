@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/jfechava/argocd-kustomize-web.git
     targetRevision: HEAD
-    path: dev
+    path: base
   destination: 
     server: https://kubernetes.default.svc
     namespace: webapp
