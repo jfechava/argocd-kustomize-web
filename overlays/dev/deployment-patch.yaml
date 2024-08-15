@@ -9,4 +9,4 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: jfechava/web-sample:3.0.0-dev  # Only changing the image
+        image: jfechava/web-sample:1.0.0  # Only changing the image

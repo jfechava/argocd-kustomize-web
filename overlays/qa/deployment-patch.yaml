@@ -4,4 +4,6 @@ kind: Kustomization
 resources:
   - ../../base
 
-namespace: webapp-dev
+namespace: webapp-qa
+patchesStrategicMerge:
+  - deployment-patch.yaml
