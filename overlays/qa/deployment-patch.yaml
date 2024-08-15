@@ -1,9 +1,12 @@
-# $KUSTOMIZATION_FILENAME
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-  - ../../base
-
-namespace: webapp-qa
-patchesStrategicMerge:
-  - deployment-patch.yaml
+# k8s/overlays/dev/deployment-patch.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapp
+spec:
+  replicas: 1  # Only changing the number of replicas for dev
+  template:
+    spec:
+      containers:
+      - name: webapp
+        image: jfechava/web-sample:1.0.0  # Only changing the image
