@@ -1,0 +1,1 @@
+-k8s manifests for testing ArgoCD with a Web Application
