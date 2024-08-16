@@ -14,10 +14,6 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: jfechava/web-sample:2.0.0
-        resources: 
-            limits:
-              memory: 300mi
-              cpu: 400 mi
+        image: jfechava/web-sample:3.0.0
         ports:
-        - containerPort: 80
+          - containerPort: 80
